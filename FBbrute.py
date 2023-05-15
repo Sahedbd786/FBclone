@@ -48,43 +48,6 @@ K = '\x1b[1;93m' # KUNING
 B = '\x1b[1;94m' # BIRU
 U = '\x1b[1;95m' # UNGU
 O = '\x1b[1;96m' # BIRU MUDA
-N = '\x1b[0m'    # WARNA MATI
-my_color = [
- P, M, H, K, B, U, O, N]
-warna = random.choice(my_color)
-
-data,data2={},{}
-aman,cp,salah=0,0,0
-ubahP,pwBaru=[],[]
-ok = []
-cp = []
-id = []
-user = []
-loop = 0
-url_lookup = "https://lookup-id.com/"
-url_mb = "https://m.facebook.com"
-url_ip = "https://www.httpbin.org/ip"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"}
-bulan_ttl = {"01": "January", "02": "February", "03": "March", "04": "April", "05": "May", "06": "June", "07": "July", "08": "Augustus", "09": "September", "10": "October", "11": "November", "12": "December"}
-done = False
-def animate():
-    os.system("clear")
-    for c in itertools.cycle(['\x1b[1;92m|', '\x1b[1;92m/', '\x1b[1;92m-', '\x1b[1;92m\\']):
-        if done:
-            break
-        sys.stdout.write(f'\r{N}[{O}â€¢{N}] Loading ' + c)
-        sys.stdout.flush()
-        time.sleep(0.03)
-t = threading.Thread(target=animate)
-t.start()
-time.sleep(0.5)
-done = True
-
-def jalan(z):
-    for e in z + '\n':
-        sys.stdout.write(e)
-        sys.stdout.flush()
-        time.sleep(0.01)
 
 def logo():
 	print("""%s
